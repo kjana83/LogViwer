@@ -1,0 +1,10 @@
+E:\Sample\LogViewer\LogViewer\bin\Release\LogViewer.exe.config
+E:\Sample\LogViewer\LogViewer\bin\Release\LogViewer.exe
+E:\Sample\LogViewer\LogViewer\bin\Release\LogViewer.pdb
+E:\Sample\LogViewer\LogViewer\bin\Release\Newtonsoft.Json.dll
+E:\Sample\LogViewer\LogViewer\bin\Release\Newtonsoft.Json.xml
+E:\Sample\LogViewer\LogViewer\obj\Release\LogViewer.NLogViewer.resources
+E:\Sample\LogViewer\LogViewer\obj\Release\LogViewer.Properties.Resources.resources
+E:\Sample\LogViewer\LogViewer\obj\Release\LogViewer.csproj.GenerateResource.Cache
+E:\Sample\LogViewer\LogViewer\obj\Release\LogViewer.exe
+E:\Sample\LogViewer\LogViewer\obj\Release\LogViewer.pdb

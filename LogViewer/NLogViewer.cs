@@ -4,6 +4,7 @@ using System.Data;
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace LogViewer
 {
@@ -37,8 +38,13 @@ namespace LogViewer
         private void ReadFile(string filename)
         {
             var lines = File.ReadAllLines(filename);
-            string jsonString = string.Format("[{0}]", string.Join(",", lines));
-            List<Log> logList = JsonConvert.DeserializeObject<List<Log>>(jsonString);
+            StringBuilder jsonString =new StringBuilder( "[");
+            foreach (var line in lines)
+            {
+                jsonString.Append(line.Substring(line.IndexOf(@"{")) + ",");
+            }
+            
+            List<Log> logList = JsonConvert.DeserializeObject<List<Log>>(jsonString.ToString().TrimEnd(new char[]{',' }) + "]");
             logTable = logList.ToDataTable<Log>();
 
             logGrid.DataSource = logTable;
